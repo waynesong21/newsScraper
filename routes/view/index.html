@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Scraping With Mongoose</title>
+    <style>
+    body { 
+    background: url('assets/background.jpg') no-repeat center center;
+    }
+    .jumbotron{
+        background-size: contain;
+        background-color: grey;
+	    color: white;
+	    opacity: .92;
+    }
+    #container{
+        position: relative;
+        margin-left: 100px;
+        margin-right: auto;
+    }
+      #wrapper {
+        width: 960px;
+        margin-left: 100px;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #headlines {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: rgb(250, 250, 250);
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">Mongo Scrapper</a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="#">Articles</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Saved Articles</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron">
+        <div id="container">
+            <h1>Note Scraper</h1>
+            <button id="scrapeButton" class="btn-primary">SCRAPE!</button>
+            <h4><i>Get all the latest news with just one click.</i></h4>
+        </div>
+    </div>
+
+    <div id="wrapper">
+      <div id="headlines"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
